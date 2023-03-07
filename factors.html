@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Understanding the Silent Killer - Hypertension</title>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png" width="70" height="70"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href= "index.html">Home</a></li>
+                        <li><a href= "about.html">About</a></li>
+                        <li><a href= "resources.html">Resources</a></li>
+                        <li><a href= "factors.html">Factors</a></li>
+                        <li><a href= "contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Factors</h1>
+        </section>
+        
+        <!-------About section of the website-------->
+        <section class="about">
+            <h1>Hypertension</h1>
+            <p>There are three important things to understand when learning about hypertension: blood pressure, prevalence, and risk factors.
+            All information is taken from the World Health Organization (WHO) website.</p>
+            
+            <div class="row">
+                <div class="course-col">
+                    <h3>Blood Pressure</h3>
+                    <p>Hypertension, also known as high or raised blood pressure, is a condition in which the blood vessels have persistently raised pressure.
+                    Blood is carried from the heart to all parts of the body in the vessels. Each time the heart beats, it pumps blood into the vessels.
+                    Blood pressure is created by the force of blood pushing against the walls of blood vessels (arteries) as it is pumped by the heart. 
+                    The higher the pressure, the harder the heart has to pump. </p>
+                </div> 
+            
+                <div class="course-col">
+                    <h3>Prevalence</h3>
+                    <p>Hypertension is a serious medical condition and can increase the risk of heart, brain, kidney and other diseases.
+                    It is a major cause of premature death worldwide, with upwards of 1 in 4 men and 1 in 5 women – over a billion people – having the condition.
+                    The burden of hypertension is felt disproportionately in low- and middle-income countries, where two thirds of cases are found, largely due to increased risk factors in those populations in recent decades.</p>
+                </div> 
+            
+                <div class="course-col">
+                    <h3>Risk Factors</h3>
+                    <p>Hypertension can be divided into two categories: primary and secondary hypertension.
+                    The main difference between the two is that secondary hypertension is caused by an underlying condition. Some of the common risk factors include
+                    age, race, being overweight or obese, not being physically active, using tobacco, too much sodium in diet, alcohol, stress and certain underlying conditions.</p>
+                </div> 
+            </div>
+        </section>
+        
+        <!----Complications------>
+         <section class="complications">
+             <h1>Complications</h1>
+             <p>These are some of the most serious complications that could result from unregulated hypertension</p>
+             
+             <div class="row">
+                 <div class="complications-col">
+                     <img src="images/heartattack.jpeg">
+                     <h3>Heart Attack or Stroke</h3>
+                     <p>High blood pressure can cause hardening and thickening of the arteries (atherosclerosis), which can lead to a heart attack, stroke or other complications.</p>
+                 </div>
+                 
+                 <div class="complications-col">
+                     <img src="images/heartfailure.jpeg">
+                     <h3>Heart Failure</h3>
+                     <p>To pump blood against the higher pressure in your vessels, the heart has to work harder. 
+                     This causes the walls of the heart's pumping chamber to thicken (left ventricular hypertrophy). 
+                     Eventually, the thickened muscle may have a hard time pumping enough blood to meet your body's needs, which can lead to heart failure.</p>
+                 </div>
+                 
+                 <div class="complications-col">
+                     <img src="images/metabolicsyndrome.jpeg">
+                     <h3>Metabolic Syndrome</h3>
+                     <p>This syndrome is a group of disorders of your body's metabolism, including increased waist size, high triglycerides, decreased high-density lipoprotein (HDL) cholesterol (the "good" cholesterol), high blood pressure and high insulin levels.
+                     These conditions make you more likely to develop diabetes, heart disease and stroke.</p>
+                 </div>
+             </div>
+         </section>
+         <!----Footer------>
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>This is a website designed by Ayan Qadir for the final project of the CS50x course offered by HarvardX.
+            <br> If anyone is able to educate themselves from my website and make a positive change in their health, my goal with this website is achieved.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="fa fa-heart-o"></i></p>
+        </section>
+        
+        <!----Javascript Code For Toggle Menu on small devices such as mobile phones------>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
